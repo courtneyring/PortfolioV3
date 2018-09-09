@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Courtney Ring | Marketing Technologist</title>
+
+        <!--Stylesheets-->
+        <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/assets/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/assets/css/styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
+
+        
+        
+    <!--[if IE]>
+      <link href="/~cering/portfolio-V2/assets/css/bootstrap-ie8.css" rel="stylesheet">
+      <script src="https://cdn.jsdelivr.net/g/html5shiv@3.7.3,respond@1.4.2"></script>
+  <![endif]-->   
+    <!--Scripts-->
+        
+        <!--Favicon-->
+        <link rel="shortcut icon" href="/assets/images/favicon.ico">
+        <link rel="icon" type="image/png" href="/assets/images/favicon.png">
+        <link rel="apple-touch-icon" href="/assets/images/touch-icon.png">
+
+<!--
+      <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-60546017-1', 'auto');
+          ga('send', 'pageview');
+
+        </script>
+-->
+        <script src='https://www.google.com/recaptcha/api.js'></script>
+
+
+</head>
+<body data-spy="scroll" data-target="#navbar">
+
+    <nav class="navbar navbar-toggleable-sm sticky-top" id="navbar" >
+        <div class="navbar-header">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="fa fa-bars"></span>
+                <p>Menu</p>
+            </button>
+
+            <a class="navbar-brand" href="#">
+                <img alt="Brand" src="assets/images/courtney-ring-logo-white.png" />
+            </a>
+        </div>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarToggler">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    
+    <div class="modal ie fade" id="ieModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span class="fa fa-close"></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h2>Wait!</h2>
+                    <h4>It looks like you're using Internet Explorer to view this page. Please use another browser to get the best user experience. </h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        
+        <!-- Landing Page -->
+        <div class="row landing" id="landing">
+            <div class="col-6 words">
+                <p>Courtney Ring<br>
+                    Marketing Technologist<br><br>
+                    A digital hybrid with experience in roles that lie at the intersection of marketing and technology. 
+                </p>
+            </div>
+            <div class="col-6 image">
+                <div class="row align-items-center">
+                    <div class="col-12">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+       
+
+        <!-- Skills Page -->
+        <div class="row section skills" id="skills" class="skills">
+            <div class="col-12 header">
+                <h2><span>Skills</span></h2>
+            </div>
+        </div>
+        
+        
+        
+        
+        <!-- Portfolio Page -->
+        <div class="row section portfolio" id="portfolio">
+            <div class="col-12 header">
+                <h2><span>Work</span></h2>
+            </div>
+            <div class="row portfolio-images justify-content-center">
+                <div class="col-12 col-md-4 project">
+                    <div class="project-inner" id="cchs">
+                        <a href="#cchsModal" data-toggle="modal" >Crawford County Historical Society</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 project">
+                    <div class="project-inner" id="ifp">
+                        <a href="#ifpModal" data-toggle="modal">Cigna Individual &amp; Family Plans</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 project">
+                    <div class="project-inner" id="floorcast">
+                        <a href="#floorcastModal" data-toggle="modal">Floorcast</a>
+                    </div>
+                </div>
+            </div>
+            <div class='row portfolio-expand'>
+                <div class='col-12'><p>"During my final semester at the University of Michigan, I worked on a responsive web application that tracked the student traffic levels in the undergraduate library in real time. The school provided my team with the metrics we used for the application. This data showed how many devices were connected to each router in the library and it was delivered via email every 5 minutes. A java application was used to populate the database with the data from these emails.<br>My role in the project was to develop the frontend and build the web framework. I used Python Flask to run the application and pull the data from the SQL database. The data was converted to a percentage based on the maximum capacity of each area of the library. Once the framework </p></div>
+            </div>
+            <div class='row portfolio-images justify-content-center'>
+                <div class="col-12 col-md-4 project">
+                    <div class="project-inner" id="medicare">
+                        <a href="#medicareModal" data-toggle="modal">Cigna Medicare</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 project">
+                    <div class="project-inner" id="hongkong">
+                        <a href="#hongkongModal" data-toggle="modal">Cigna Hong Kong</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 project">
+                    <div class="project-inner" id="dxs">
+                        <a href="#hongkongModal" data-toggle="modal">Cigna Digital Experience Standards</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        
+        <!--Portfolio Modal-->
+        <div class="modal modalPortfolio fade" id="" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title title"></h3>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span class="fa fa-close"></span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-12 col-md-6 col-lg-5 offset-lg-1 modal-image">
+                                <img src="" />
+                                <!--<div class="image"></div>-->
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-5 modal-details">
+                                <!--<h3 class="title"></h3>-->
+                                <h4 class="title">Project Description and Details</h4>
+                                <p class="description"></p>
+                                <h4 class="specs">Project Specs</h4>
+                                <table>
+                                    <tr>
+                                        <td><h5>Company: </h5></td>
+                                        <td><h5 class="company"></h5></td>
+                                    </tr>
+                                    <tr>
+                                        <td><h5>Skills: </h5></td>
+                                        <td><h5 class="skills"></h5></td>
+                                    </tr>
+                                    <tr>
+                                        <td><h5>Date: </h5></td>
+                                        <td><h5 class="date"></h5></td>
+                                    </tr>
+                                    <tr>
+                                        <td><h5>Website: </h5></td>
+                                        <td><h5 class="website"></h5></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <!-- Contact Page -->
+        <div id="contact" class="contact row section">
+            <div class="col-12 header">
+                <h2><span>Contact</span></h2>
+            </div>
+            <div class='row form-container'>
+                <div class="col-4 info">
+                    <a id="resume" target="_blank" href="/assets/docs/courtney-ring-resume.pdf">
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-download fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h5 class="label"><strong>Resume</strong></h5>
+                        <h5 class="link">Download [PDF,&nbsp;1MB]</h5>
+                    </a>
+                </div>
+                <div class="col-4 info">
+                    <a id="email" href="mailto:hello@courtney-ring.com">
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-envelope-o fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h5 class="label"><strong>Email</strong></h5>
+                        <h5 class="link">hello@courtney-ring.com</h5>
+                    </a>
+                </div>
+                <div class="col-4 info">
+                    <a id="linkedin" href="http://www.linkedin.com/in/courtneyring710" target="_blank">
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h5 class="label"><strong>LinkedIn</strong></h5>
+                        <h5 class="link">courtneyring710</h5>
+                    </a>
+                </div>
+                <div class="col-12 form">
+                    <form role="form" method="post" action="mailer2.php">
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" class="form-control" name="name" id="name">
+                                </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" class="form-control" name="email" id="email">
+                                </div>
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea name="message" class="form-control" rows="5" id="message"></textarea>
+                        </div>
+                        <div class="g-recaptcha" data-sitekey="6Le3yiUUAAAAAMymjX9M1V7BBSeksoTNxlOKaJX9" data-callback="recaptchaCallback"></div>
+                        <input type="submit" name="submit" id="submit" class="submit disabled" value="Send" disabled>
+                    </form>
+                </div>
+            </div>
+
+
+        </div>
+        
+        <!--Footer-->
+        <div id="footer" class="footer row section">
+            <p>
+                <span><a href="#landing">Back to Top</a></span>
+                <span>©2017 Courtney Ring</span>
+                
+            </p>
+        </div>
+    
+        
+    </div>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="/assets/js/tether.min.js"></script>
+    <script type="text/javascript" src="/assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/assets/js/scripts.js"></script>
+    
+</body>
+</html>
