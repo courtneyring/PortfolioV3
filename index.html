@@ -92,10 +92,9 @@
         <!-- Landing Page -->
         <div class="row landing" id="landing">
             <div class="col-6 words">
-                <p>Courtney Ring<br>
-                    Marketing Technologist<br><br>
-                    A digital hybrid with experience in roles that lie at the intersection of marketing and technology. 
-                </p>
+                <h1><b>Courtney</b> Ring</h1>
+                <h2>Marketing Technologist</h2>
+                <h3>Bridging the gap between marketing and technology by bringing digital solutions to marketing and creativity to technology.</h3> 
             </div>
             <div class="col-6 image">
                 <div class="row align-items-center">
@@ -109,9 +108,49 @@
        
 
         <!-- Skills Page -->
-        <div class="row section skills" id="skills" class="skills">
+        <div class="row section skills" id="skills">
             <div class="col-12 header">
                 <h2><span>Skills</span></h2>
+            </div>
+            <div class='col-12'>
+                <div class='row'>
+                    <div class='col-xs-12 col-sm-4 subcategory'>
+                        <i class='fas fa-list-ul'></i>
+                        <h4>Professional</h4>
+                        <ul>
+                            <li>Web Development</li>
+                            <li>Project Management</li>
+                            <li>Digital Strategy</li>
+                            <li>Search Engine Optimization</li>
+                            <li>Analytics</li>
+                        </ul>
+                    
+                    </div>
+                     <div class='col-xs-12 col-sm-4 subcategory'>
+                        <i class='fas fa-code'></i>
+                        <h4>Technical</h4>
+                        <ul>
+                            <li>Ember.js, AngularJS</li>
+                            <li>HTML, Handlebars</li>
+                            <li>Javascript, JQuery, Coffeescript</li>
+                            <li>CSS, Sass</li>
+                            <li>Python</li>
+                        </ul>
+                    
+                    </div>
+                    <div class='col-xs-12 col-sm-4 subcategory'>
+                        <i class='fas fa-laptop'></i>
+                        <h4>Apps &amp; Software</h4>
+                        <ul>
+                            <li>Jira, Jira API, Scriptrunner</li>
+                            <li>HP Teamsite &amp; Higher Logic Content Managers</li>
+                            <li>Photoshop, InDesign, AxureRP</li>
+                            <li>Git</li>
+                        </ul>
+                    
+                    </div>
+                
+                </div>
             </div>
         </div>
         
@@ -125,23 +164,41 @@
             </div>
             <div class="row portfolio-images justify-content-center">
                 <div class="col-12 col-md-4 project">
-                    <div class="project-inner" id="cchs">
-                        <a href="#cchsModal" data-toggle="modal" >Crawford County Historical Society</a>
+                    <div class="project-inner"  id='cchs'>
+                        <a>Crawford County Historical Society</a>
                     </div>
                 </div>
                 <div class="col-12 col-md-4 project">
                     <div class="project-inner" id="ifp">
-                        <a href="#ifpModal" data-toggle="modal">Cigna Individual &amp; Family Plans</a>
+                        <a>Cigna Individual &amp; Family Plans</a>
                     </div>
                 </div>
                 <div class="col-12 col-md-4 project">
                     <div class="project-inner" id="floorcast">
-                        <a href="#floorcastModal" data-toggle="modal">Floorcast</a>
+                        <a>Floorcast</a>
                     </div>
                 </div>
             </div>
-            <div class='row portfolio-expand'>
-                <div class='col-12'><p>"During my final semester at the University of Michigan, I worked on a responsive web application that tracked the student traffic levels in the undergraduate library in real time. The school provided my team with the metrics we used for the application. This data showed how many devices were connected to each router in the library and it was delivered via email every 5 minutes. A java application was used to populate the database with the data from these emails.<br>My role in the project was to develop the frontend and build the web framework. I used Python Flask to run the application and pull the data from the SQL database. The data was converted to a percentage based on the maximum capacity of each area of the library. Once the framework </p></div>
+            <div class='collapse' id='cchs-expand'>
+                <div class=' portfolio-expand row' >
+                    <div class='col-12'>
+                        "During my final semester at the University of Michigan, I worked on a responsive web application that tracked the student traffic levels in the undergraduate library in real time. The school provided my team with the metrics we used for the application. This data showed how many devices were connected to each router in the library and it was delivered via email every 5 minutes. A java application was used to populate the database with the data from these emails.<br>My role in the project was to develop the frontend and build the web framework. I used Python Flask to run the application and pull the data from the SQL database. The data was converted to a percentage based on the maximum capacity of each area of the library. Once the framework 
+                    </div>
+                </div>
+            </div>
+            <div class='collapse' id='ifp-expand'>
+                <div class=' portfolio-expand row' >
+                    <div class='col-12'>
+                        "During my final semester at the University of Michigan, I worked on a responsive web application that tracked the student traffic levels in the undergraduate library in real time. The school provided my team with the metrics we used for the application. This data showed how many devices were connected to each router in the library and it was delivered via email every 5 minutes. A java application was used to populate the database with the data from these emails.<br>My role in the project was to develop the frontend and build the web framework. I used Python Flask to run the application and pull the data from the SQL database. The data was converted to a percentage based on the maximum capacity of each area of the library. Once the framework 
+                    </div>
+                </div>
+            </div>
+            <div class='collapse' id='floorcast-expand'>
+                <div class=' portfolio-expand row' >
+                    <div class='col-12'>
+                        "During my final semester at the University of Michigan, I worked on a responsive web application that tracked the student traffic levels in the undergraduate library in real time. The school provided my team with the metrics we used for the application. This data showed how many devices were connected to each router in the library and it was delivered via email every 5 minutes. A java application was used to populate the database with the data from these emails.<br>My role in the project was to develop the frontend and build the web framework. I used Python Flask to run the application and pull the data from the SQL database. The data was converted to a percentage based on the maximum capacity of each area of the library. Once the framework 
+                    </div>
+                </div>
             </div>
             <div class='row portfolio-images justify-content-center'>
                 <div class="col-12 col-md-4 project">
@@ -230,7 +287,7 @@
                     <a id="email" href="mailto:hello@courtney-ring.com">
                         <span class="fa-stack fa-lg">
                             <i class="fa fa-circle fa-stack-2x"></i>
-                            <i class="fa fa-envelope-o fa-stack-1x fa-inverse"></i>
+                            <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
                         </span>
                         <h5 class="label"><strong>Email</strong></h5>
                         <h5 class="link">hello@courtney-ring.com</h5>
@@ -240,7 +297,7 @@
                     <a id="linkedin" href="http://www.linkedin.com/in/courtneyring710" target="_blank">
                         <span class="fa-stack fa-lg">
                             <i class="fa fa-circle fa-stack-2x"></i>
-                            <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                            <i class="fab fa-linkedin-in fa-stack-1x fa-inverse"></i>
                         </span>
                         <h5 class="label"><strong>LinkedIn</strong></h5>
                         <h5 class="link">courtneyring710</h5>
@@ -273,7 +330,7 @@
         <div id="footer" class="footer row section">
             <p>
                 <span><a href="#landing">Back to Top</a></span>
-                <span>©2017 Courtney Ring</span>
+                <span>©2018 Courtney Ring</span>
                 
             </p>
         </div>

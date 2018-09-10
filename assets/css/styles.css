@@ -13,17 +13,22 @@ html{
 }
 
 
+
+/*
 @media(min-width:768px){
-    body{
+    .container-fluid{
         margin-top:-6.4rem;
     }
 }
 
 @media(min-width:992px){
-    body{
-        margin-top:-10rem;
+    .container-fluid{
+        margin-top:-95px;
+        margin-bottom:-95px;
     }
 }
+*/
+
 
 /*Fonts*/
 h1, h2, h3, h4, h5, h6, p, a, li{
@@ -100,25 +105,25 @@ ul{
     }
 }
 
-@media(min-width:1800px){
+@media(min-width:1200px){
     h1{
-    font-size: 6rem;
+    font-size: 36px;
     }
 
     h2{
-        font-size:4.5rem;
+        font-size:30px;
     }
 
     h3{
-        font-size:4rem;
+        font-size:22px;
     }
     
     h4{
-        font-size:3rem;
+        font-size:23px;
     }
 
     p, li{
-        font-size:2.5rem;
+        font-size:18px;
     }
 }
 
@@ -143,7 +148,7 @@ ul{
 }
 
 .navbar .navbar-collapse ul li .nav-link.active{
-    color:#44839A;
+    color:#f7f5f4;
 }
 
 .navbar-toggler span{
@@ -241,23 +246,38 @@ ul{
 
 
 /*Landing*/
+.landing{
+    margin-top: -95px;
+    height: 100vh;
+}
+
 .landing .image{
-    background-image: url(/assets/images/landing-image.png);
-    background-size: 200%;
-    background-position: center;
+    background-image: url(/assets/images/landing-photo.png);
+    background-size: 213%;
+    background-position: 40% 0%;
+    background-repeat: no-repeat;
 }
 
 .landing .words{
     background-color: #1a1550;
     color: white;
     display: flex;
-    align-items:center;
+    flex-direction: column;
     justify-content: center;
-    padding: 50px;
+    line-height: 20px;
+    padding: 20px 70px;
+}
+
+.landing .words h1{
+    margin-bottom: 10px;
+}
+
+.landing .words h2{
+    margin-bottom: 20px;
 }
 
 .landing .image, .landing .words{
-    height: 100vh;
+    height: 100%;
 }
 
 
@@ -292,6 +312,22 @@ ul{
 /*Skills Section*/
 .skills{
     background-color: #f7f5f4;
+}
+
+.skills .subcategory{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skills .subcategory .fas{
+    color: #1a1550;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.skills .subcategory h4{
+    margin-bottom: 10px;
 }
 
 
@@ -356,6 +392,7 @@ ul{
 .portfolio .portfolio-expand{
     background-color: rgb(49,49,49);
     color: white;
+    margin: 0px;
     padding: 40px;
     position: relative;
 }
@@ -364,13 +401,25 @@ ul{
     content: " ";
     position: absolute;
     bottom: 100%;
-    left: 50%;
+    
     margin-left: -5px;
     border-width: 20px;
     border-style: solid;
     border-color: transparent transparent rgb(49,49,49) transparent;
 }
 
+
+#cchs-expand > .portfolio-expand::after{
+    left: 15%;
+}
+
+#ifp-expand > .portfolio-expand::after{
+    left: 50%;
+}
+
+#floorcast-expand > .portfolio-expand::after{
+    left: 85%;
+}
 
 @media(min-width:767px){
     .portfolio .project{
