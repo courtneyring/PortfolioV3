@@ -78,26 +78,26 @@ $(function(){
 
 
 //-----------Portfolio Modal Data--------//
-$(function(){
-    
-    var data = {}
-
-    
-    $.getJSON("/assets/json/portfolio.json", function(json) {
-        
-        data = json;
-        
-    }).then(function(){
-         $(".portfolio .portfolio-images .project-inner").each(function(){
-            
-            var thumbnailLoc = this.id;
-            var thumbnail = data[thumbnailLoc].thumbnail;
-            
-            $(this).css("background", "url("+thumbnail+") center/cover no-repeat");    
-        
-        })
-    })
-})
+//$(function(){
+//    
+//    var data = {}
+//
+//    
+//    $.getJSON("/assets/json/portfolio.json", function(json) {
+//        
+//        data = json;
+//        
+//    }).then(function(){
+//         $(".portfolio .portfolio-images .project-inner").each(function(){
+//            
+//            var thumbnailLoc = this.id;
+//            var thumbnail = data[thumbnailLoc].thumbnail;
+//            
+//            $(this).css("background", "url("+thumbnail+") center/cover no-repeat");    
+//        
+//        })
+//    })
+//})
 
 $(function(){
     $('.collapse').collapse('hide')
@@ -108,7 +108,9 @@ $('.project').on('click', function(){
     id = $(this).children('.project-inner').attr('id')
 
     $('.collapse.show').collapse('hide')
+
     $('#'+id+'-expand').collapse('show')
+
 })
 
 $(".modalPortfolio .modal-body .website").on('click',function(){

@@ -175,6 +175,7 @@ ul{
         -o-transition: all 0.6s ease-out;
         -ms-transition: all 0.6s ease-out;
         transition: all 0.6s ease-out; 
+        height: 66px;
     }
     .navbar.scrolled {
         background: rgb(49, 49, 49);
@@ -191,7 +192,7 @@ ul{
     }
     
     .navbar-brand>img{
-        height:7.6rem;
+        height:65px;
     }
     
 }
@@ -215,12 +216,12 @@ ul{
 }
 
 .header h2 span{
-    border-bottom:.6rem double #1a1550;
+    border-bottom:.6rem double #2c2a71;
     padding: 0rem 1.3rem;
 }
 
 .header h2{
-    color: #1a1550;
+    color: #2c2a71;
 }
 
 @media(min-width:767px){
@@ -247,7 +248,7 @@ ul{
 
 /*Landing*/
 .landing{
-    margin-top: -95px;
+    margin-top: -66px;
     height: 100vh;
 }
 
@@ -259,7 +260,7 @@ ul{
 }
 
 .landing .words{
-    background-color: #1a1550;
+    background-color: #2c2a71;
     color: white;
     display: flex;
     flex-direction: column;
@@ -273,7 +274,17 @@ ul{
 }
 
 .landing .words h2{
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+}
+
+.landing .words h3{
+    margin-top: 30px;
+}
+
+.landing .words hr{
+    border-top-color: white;
+    width: 124px;
+    margin: 1rem 0;
 }
 
 .landing .image, .landing .words{
@@ -311,7 +322,7 @@ ul{
 
 /*Skills Section*/
 .skills{
-    background-color: #f7f5f4;
+    background-color: white;
 }
 
 .skills .subcategory{
@@ -321,7 +332,7 @@ ul{
 }
 
 .skills .subcategory .fas{
-    color: #1a1550;
+    color: #2c2a71;
     font-size: 28px;
     margin-bottom: 15px;
 }
@@ -333,7 +344,7 @@ ul{
 
 /*Portfolio Section*/
 .portfolio{
-    background-color: white;
+    background-color: #f7f5f4;
     display: flex;
     flex-direction: column;
 }
@@ -354,8 +365,23 @@ ul{
 }
 
 .portfolio .project .project-inner {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+/*
+    background-clip: border-box;
+    border: 3px solid #2c2a71;
+*/
     height: 100%;
     width: 100%;
+/*
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%)
+*/
+/*
+    background-color: #FFF;
+    background-blend-mode: luminosity, normal;
+*/
     -webkit-transition: all .5s;
     -moz-transition: all .5s;
     -o-transition: all .5s;
@@ -390,13 +416,16 @@ ul{
 
 
 .portfolio .portfolio-expand{
-    background-color: rgb(49,49,49);
-    color: white;
+/*    background-color: rgb(49,49,49);*/
+    border-top: 1px solid rgb(49,49,49);
+    border-bottom: 1px solid rgb(49,49,49);
+    color: rgb(49,49,49);
     margin: 0px;
     padding: 40px;
     position: relative;
 }
 
+/*
 .portfolio .portfolio-expand::after {
     content: " ";
     position: absolute;
@@ -407,24 +436,63 @@ ul{
     border-style: solid;
     border-color: transparent transparent rgb(49,49,49) transparent;
 }
+*/
 
 
-#cchs-expand > .portfolio-expand::after{
+
+#aaum{
+    background-image: url('/assets/images/portfolio-thumbnail-aaum.png')
+}
+
+#cchs{
+    background-image: url('/assets/images/portfolio-thumbnail-cchs.png')
+}
+
+#ifp{
+    background-image: url('/assets/images/portfolio-thumbnail-ifp.png')
+}
+
+#medicare{
+     background-image: url('/assets/images/portfolio-thumbnail-medicare.png')
+}
+
+#hongkong{
+    background-image: url('/assets/images/portfolio-thumbnail-hk.png')
+}
+
+#dxs{
+    background-image: url('/assets/images/portfolio-thumbnail-dxs.png')
+}
+
+#jira{
+    background-image: url('/assets/images/portfolio-thumbnail-jira.png')
+}
+
+#tracer{
+    background-image: url('/assets/images/portfolio-thumbnail-tracer.png')
+}
+
+#analytics{
+    background-image: url('/assets/images/portfolio-thumbnail-analytics.png')
+}
+
+
+.collapse.left > .portfolio-expand::after{
     left: 15%;
 }
 
-#ifp-expand > .portfolio-expand::after{
+.collapse.middle > .portfolio-expand::after{
     left: 50%;
 }
 
-#floorcast-expand > .portfolio-expand::after{
+.collapse.right > .portfolio-expand::after{
     left: 85%;
 }
 
 @media(min-width:767px){
     .portfolio .project{
         height:350px;
-        border: 1.2rem solid white;
+        border: 1.2rem solid #f7f5f4;
     }
     
     .portfolio .project .project-inner a{
@@ -441,6 +509,8 @@ ul{
     }
 
     .portfolio .project:hover .project-inner, .portfolio .project:focus .project-inner {
+        -webkit-filter: grayscale(0%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+        filter: grayscale(0%); /* FF 35+ */
         -ms-transform: scale(1.2);
         -moz-transform: scale(1.2);
         -webkit-transform: scale(1.2);
@@ -571,7 +641,7 @@ ul{
 
 /*Contact Section*/
 .contact{
-    background-color: #f7f5f4;;
+    background-color: white;
 }
 
 .contact .info{
@@ -585,12 +655,12 @@ ul{
 }
 
 .contact .info .link{
-    color: #1a1550;
+    color: #2c2a71;
     text-decoration: underline;
 }
 
 .contact .info .fa-circle{
-    color: #1a1550;
+    color: #2c2a71;
 }
 
 

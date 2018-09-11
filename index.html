@@ -43,7 +43,7 @@
 </head>
 <body data-spy="scroll" data-target="#navbar">
 
-    <nav class="navbar navbar-toggleable-sm sticky-top" id="navbar" >
+    <nav class="navbar navbar-expand-md sticky-top" id="navbar" >
         <div class="navbar-header">
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="fa fa-bars"></span>
@@ -60,7 +60,7 @@
                     <a class="nav-link" href="#skills">Skills</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                    <a class="nav-link" href="#work">Work</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#contact">Contact</a>
@@ -92,8 +92,9 @@
         <!-- Landing Page -->
         <div class="row landing" id="landing">
             <div class="col-6 words">
-                <h1><b>Courtney</b> Ring</h1>
+                <h1><b>Courtney Ring</b></h1>
                 <h2>Marketing Technologist</h2>
+                <hr>
                 <h3>Bridging the gap between marketing and technology by bringing digital solutions to marketing and creativity to technology.</h3> 
             </div>
             <div class="col-6 image">
@@ -163,109 +164,168 @@
                 <h2><span>Work</span></h2>
             </div>
             <div class="row portfolio-images justify-content-center">
-                <div class="col-12 col-md-4 project">
-                    <div class="project-inner"  id='cchs'>
-                        <a>Crawford County Historical Society</a>
+                <div class="order-md-0 col-12 col-md-4 project">
+                    <div class="project-inner" id="tracer">
+                        <a>Tracer</a>
                     </div>
                 </div>
-                <div class="col-12 col-md-4 project">
+                <div class='order-md-3 col-12 collapse left' id='tracer-expand'>
+                    <div class='portfolio-expand row' >
+                        <div class='col-12'>
+                            <h3>Tracer</h3>
+                            <ul>
+                                <li>Frontend dev for an application that collects and aggregates advertising data across platforms. </li>
+                                <li>Work with other frontend devs and designers to find solutions from both programmatic and design perspectives</li>
+                            </ul>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="order-md-1 col-12 col-md-4 project">
                     <div class="project-inner" id="ifp">
                         <a>Cigna Individual &amp; Family Plans</a>
                     </div>
                 </div>
-                <div class="col-12 col-md-4 project">
-                    <div class="project-inner" id="floorcast">
-                        <a>Floorcast</a>
+                <div class='order-md-4 col-12 collapse middle' id='ifp-expand'>
+                    <div class=' portfolio-expand row' >
+                        <div class='col-12'>
+                            <h3>Cigna Individual &amp; Family Plans</h3>
+                            <ul>
+                                <li>Led the development effort of the annual release of Cigna Individual and Family Plans for Open Enrollment</li>
+                                <li>Moved the plan finder application from Java to AngularJS</li>
+                                <li>Automated data processing  to format the plan details for the plan finder application</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class='collapse' id='cchs-expand'>
-                <div class=' portfolio-expand row' >
-                    <div class='col-12'>
-                        "During my final semester at the University of Michigan, I worked on a responsive web application that tracked the student traffic levels in the undergraduate library in real time. The school provided my team with the metrics we used for the application. This data showed how many devices were connected to each router in the library and it was delivered via email every 5 minutes. A java application was used to populate the database with the data from these emails.<br>My role in the project was to develop the frontend and build the web framework. I used Python Flask to run the application and pull the data from the SQL database. The data was converted to a percentage based on the maximum capacity of each area of the library. Once the framework 
+                
+                <div class="order-md-2 col-12 col-md-4 project">
+                    <div class="project-inner" id="jira">
+                        <a>Tracer Project Tracking</a>
                     </div>
                 </div>
-            </div>
-            <div class='collapse' id='ifp-expand'>
-                <div class=' portfolio-expand row' >
-                    <div class='col-12'>
-                        "During my final semester at the University of Michigan, I worked on a responsive web application that tracked the student traffic levels in the undergraduate library in real time. The school provided my team with the metrics we used for the application. This data showed how many devices were connected to each router in the library and it was delivered via email every 5 minutes. A java application was used to populate the database with the data from these emails.<br>My role in the project was to develop the frontend and build the web framework. I used Python Flask to run the application and pull the data from the SQL database. The data was converted to a percentage based on the maximum capacity of each area of the library. Once the framework 
-                    </div>
-                </div>
-            </div>
-            <div class='collapse' id='floorcast-expand'>
-                <div class=' portfolio-expand row' >
-                    <div class='col-12'>
-                        "During my final semester at the University of Michigan, I worked on a responsive web application that tracked the student traffic levels in the undergraduate library in real time. The school provided my team with the metrics we used for the application. This data showed how many devices were connected to each router in the library and it was delivered via email every 5 minutes. A java application was used to populate the database with the data from these emails.<br>My role in the project was to develop the frontend and build the web framework. I used Python Flask to run the application and pull the data from the SQL database. The data was converted to a percentage based on the maximum capacity of each area of the library. Once the framework 
-                    </div>
-                </div>
-            </div>
-            <div class='row portfolio-images justify-content-center'>
-                <div class="col-12 col-md-4 project">
-                    <div class="project-inner" id="medicare">
-                        <a href="#medicareModal" data-toggle="modal">Cigna Medicare</a>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4 project">
-                    <div class="project-inner" id="hongkong">
-                        <a href="#hongkongModal" data-toggle="modal">Cigna Hong Kong</a>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4 project">
-                    <div class="project-inner" id="dxs">
-                        <a href="#hongkongModal" data-toggle="modal">Cigna Digital Experience Standards</a>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-        
-        <!--Portfolio Modal-->
-        <div class="modal modalPortfolio fade" id="" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h3 class="modal-title title"></h3>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span class="fa fa-close"></span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="row">
-                            <div class="col-12 col-md-6 col-lg-5 offset-lg-1 modal-image">
-                                <img src="" />
-                                <!--<div class="image"></div>-->
-                            </div>
-                            <div class="col-12 col-md-6 col-lg-5 modal-details">
-                                <!--<h3 class="title"></h3>-->
-                                <h4 class="title">Project Description and Details</h4>
-                                <p class="description"></p>
-                                <h4 class="specs">Project Specs</h4>
-                                <table>
-                                    <tr>
-                                        <td><h5>Company: </h5></td>
-                                        <td><h5 class="company"></h5></td>
-                                    </tr>
-                                    <tr>
-                                        <td><h5>Skills: </h5></td>
-                                        <td><h5 class="skills"></h5></td>
-                                    </tr>
-                                    <tr>
-                                        <td><h5>Date: </h5></td>
-                                        <td><h5 class="date"></h5></td>
-                                    </tr>
-                                    <tr>
-                                        <td><h5>Website: </h5></td>
-                                        <td><h5 class="website"></h5></td>
-                                    </tr>
-                                </table>
-                            </div>
+                 
+                <div class='order-md-5 col-12 collapse right' id='jira-expand'>
+                    <div class=' portfolio-expand row' >
+                        <div class='col-12'>
+                            <h3>Tracer Project Tracking</h3>
+                            <ul>
+                                <li>Pitched a new project tracking system for our team to provide more clarity to status and progress of the work being done</li>
+                                <li>Built an instance of Jira, customized for our development workflow and roles on the team</li>
+                                <li>Provided training for the team and continue to serve as project manager for 20% of my work week</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+            <div class='row portfolio-images justify-content-center'>
+                <div class="order-md-0 col-12 col-md-4 project">
+                    <div class="project-inner" id="aaum">
+                        <a>UofM Alumni Association</a>
+                    </div>
+                </div>
+                <div class='order-md-3 col-12 collapse left' id='aaum-expand'>
+                    <div class=' portfolio-expand row' >
+                        <div class='col-12'>
+                            <h3>Alumni Association of the University of Michigan - NYC Chapter</h3>
+                            <ul>
+                                <li>Serve as the webmaster for the NYC Chapter of the Alumni Association of the University of Michigan</li>
+                                <li>Working to update the current website to improve the user interface and make the site mobile friendly</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-md-1 col-12 col-md-4 project">
+                    <div class="project-inner" id="hongkong">
+                        <a>Cigna Hong Kong</a>
+                    </div>
+                </div>
+                <div class='order-md-4 col-12 collapse middle' id='hongkong-expand'>
+                    <div class=' portfolio-expand row' >
+                        <div class='col-12'>
+                            <h3>Cigna Hong Kong</h3>
+                            <ul>
+                                <li>GCMS took on the initiative to move Cigna Hong Kong onto HP Teamsite Content Manager</li>
+                                <li>Required significant collaboration between the US and Hong Kong Teams, including Developers, UI/UX, QA, content translators, Project Managers, and Business Managers</li>
+                                <li>The site was done in both English and Chinese </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-md-2 col-12 col-md-4 project">
+                    <div class="project-inner" id="analytics">
+                        <a>Tracer Marketing Analytics</a>
+                    </div>
+                </div>
+                <div class='order-md-5 col-12 collapse right' id='analytics-expand'>
+                    <div class=' portfolio-expand row' >
+                        <div class='col-12'>
+                            <h3>Tracer Web Marketing Analytics</h3>
+                            <ul>
+                                <li>As part of the move to market to external clients, a public marketing site was made to highlight the features of the application</li>
+                                <li>Responsible for the analytics on the site, I used Google Analytics and Included custom event firing to get a better idea of user interaction</li>
+                                <li>We continue to monitor the site using the Google Analytics platform</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class='row portfolio-images justify-content-center'>
+                <div class="order-md-0 col-12 col-md-4 project">
+                    <div class="project-inner" id="medicare">
+                        <a>Cigna Medicare</a>
+                    </div>
+                </div>
+                <div class='order-md-3 col-12 collapse left' id='medicare-expand'>
+                    <div class=' portfolio-expand row' >
+                        <div class='col-12'>
+                           <h3>Cigna HealthSpring-Medicare</h3>
+                            <ul>
+                                <li>Participated in the annual release of Cigna HealthSpring-Medicare website</li>
+                                <li>Used python to automate data processing from various spreadsheets to one JSON file used by the plan finder application</li>
+                                <li>Content updates and defect corrections leading up to the release</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+               <div class="order-md-1 col-12 col-md-4 project">
+                    <div class="project-inner"  id='cchs'>
+                        <a>Crawford County Historical Society</a>
+                    </div>
+                </div>
+                <div class='order-md-4 col-12 collapse middle' id='cchs-expand'>
+                    <div class=' portfolio-expand row' >
+                        <div class='col-12'>
+                            <h3>Crawford County Historical Society</h3>
+                            <ul>
+                                <li>Volunteer work done for the Crawford County Historical Society</li>
+                                <li>Done in effort to increase museum traffic and raise money for the Historical Society</li>
+                                <li>A single page site developed with AngularJS, Google tools were used to measure and improve performance </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-md-2 col-12 col-md-4 project">
+                    <div class="project-inner" id="dxs">
+                        <a>Cigna Digital Experience Standards</a>
+                    </div>
+                </div>
+                <div class='order-md-5 col-12 collapse right' id='dxs-expand'>
+                    <div class=' portfolio-expand row' >
+                        <div class='col-12'>
+                            <h3>Cigna Digital Experience Standards</h3>
+                            <ul>
+                                <li>A project for marketing to supply standards for all digital teams in order to make Cigna's online presence more consistent</li>
+                                <li>Contributed to the design and development of the project by working between the marketing department and Cigna Content Management Services</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
 
+
+            </div>
+        </div>
+        
         
         <!-- Contact Page -->
         <div id="contact" class="contact row section">
@@ -273,7 +333,7 @@
                 <h2><span>Contact</span></h2>
             </div>
             <div class='row form-container'>
-                <div class="col-4 info">
+                <div class="col-12 col-md-4 info">
                     <a id="resume" target="_blank" href="/assets/docs/courtney-ring-resume.pdf">
                         <span class="fa-stack fa-lg">
                             <i class="fa fa-circle fa-stack-2x"></i>
@@ -283,7 +343,7 @@
                         <h5 class="link">Download [PDF,&nbsp;1MB]</h5>
                     </a>
                 </div>
-                <div class="col-4 info">
+                <div class="col-12 col-md-4 info">
                     <a id="email" href="mailto:hello@courtney-ring.com">
                         <span class="fa-stack fa-lg">
                             <i class="fa fa-circle fa-stack-2x"></i>
@@ -293,7 +353,7 @@
                         <h5 class="link">hello@courtney-ring.com</h5>
                     </a>
                 </div>
-                <div class="col-4 info">
+                <div class="col-12 col-md-4 info">
                     <a id="linkedin" href="http://www.linkedin.com/in/courtneyring710" target="_blank">
                         <span class="fa-stack fa-lg">
                             <i class="fa fa-circle fa-stack-2x"></i>
