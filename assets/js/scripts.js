@@ -1,3 +1,11 @@
+//--------Temp - Disable Mobile-------/
+$(function(){
+    if($(window).width()<1400){
+        $('body').html('<img width=' + $(window).width() + '  src=\'assets/images/under-construction.png\'>')
+    }
+})
+
+
 //--------Smoothscroll Function---------//
 //$("nav ul li a[href^='#']").on('click', function(e) {
 $(".nav-item a, .arrow, .footer a, .navbar-brand").on('click', function(e) {
@@ -32,6 +40,8 @@ $(".nav-item a, .arrow, .footer a, .navbar-brand").on('click', function(e) {
 $('body').scrollspy({
    offset: $("nav").outerHeight()+1
 });
+
+
 
 
 $(function(){
