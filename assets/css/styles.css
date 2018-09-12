@@ -254,7 +254,7 @@ ul{
 
 .landing .image{
     background-image: url(/assets/images/landing-photo.png);
-    background-size: 213%;
+    background-size: cover;
     background-position: 40% 0%;
     background-repeat: no-repeat;
 }
@@ -291,7 +291,11 @@ ul{
     height: 100%;
 }
 
-
+@media(min-width:1200px){
+    .landing .image{
+        background-size: 213%;
+    }
+}
 
 
 /*IE Modal*/
