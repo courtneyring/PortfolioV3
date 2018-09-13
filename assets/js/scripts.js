@@ -35,16 +35,16 @@ $('body').scrollspy({
 
 
 
-
-$(function(){
-    if($(window).width()<768){
-        var landingOffset = $(window).height()-$("nav").outerHeight()
-        $('.landing').css('height', landingOffset)
-    }
-    else{
-        $('.landing').css('height', '100vh')
-    }
-})
+//Need this?
+//$(function(){
+//    if($(window).width()<768){
+//        var landingOffset = $(window).height()-$("nav").outerHeight()
+//        $('.landing').css('height', landingOffset)
+//    }
+//    else{
+//        $('.landing').css('height', '100vh')
+//    }
+//})
 
 $(function(){
     $(window).on("activate.bs.scrollspy", function(){
@@ -69,12 +69,9 @@ function checkScroll(){
 }
 
 $(function(){
-    if($(window).width() > 992 ){
-        $(window).on("scroll load resize", function(){
-            checkScroll();
-        });
-    }
-
+    $(window).on("scroll load resize", function(){
+        checkScroll();
+    })
 })
 
 
