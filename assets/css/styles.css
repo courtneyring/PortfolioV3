@@ -137,12 +137,11 @@ ul{
     -o-transition: all 0.6s ease-out;
     -ms-transition: all 0.6s ease-out;
     transition: all 0.6s ease-out; 
-/*    height: 66px;*/
 }
 
 .navbar.scrolled {
-        background: rgb(49, 49, 49);
-    }
+    background: rgb(49, 49, 49);
+}
 
 .navbar-toggleable-md .navbar-nav .nav-link{
     padding-right:1.2rem;
@@ -245,7 +244,6 @@ ul{
 /*Landing*/
 .landing{
     height: 100vh;
-    margin-top:-63px;
 }
 
 .landing .image{

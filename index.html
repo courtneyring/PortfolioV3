@@ -43,7 +43,7 @@
 </head>
 <body data-spy="scroll" data-target="#navbar">
 
-    <nav class="navbar navbar-expand-md sticky-top" id="navbar" >
+    <nav class="navbar navbar-expand-md fixed-top" id="navbar" >
 
         <a class="navbar-brand" href="#">
             <img alt="Brand" src="assets/images/courtney-ring-logo-white.png" />
@@ -476,27 +476,28 @@
                 <h2><span>Contact</span></h2>
             </div>
             <div class='col-12 form-container'>
-                <div class="col-12 col-md-4 info">
-                    <a id="resume" target="_blank" href="/assets/docs/courtney-ring-resume.pdf">
-                        <span class="fa-stack fa-lg">
-                            <i class="fa fa-circle fa-stack-2x"></i>
-                            <i class="fa fa-download fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h5 class="label"><strong>Resume</strong></h5>
-                        <h5 class="link">Download [PDF,&nbsp;1MB]</h5>
-                    </a>
-                </div>
-                <div class="col-12 col-md-4 info">
-                    <a id="email" href="mailto:hello@courtney-ring.com">
-                        <span class="fa-stack fa-lg">
-                            <i class="fa fa-circle fa-stack-2x"></i>
-                            <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h5 class="label"><strong>Email</strong></h5>
-                        <h5 class="link">hello@courtney-ring.com</h5>
-                    </a>
-                </div>
-                <div class="col-12 col-md-4 info">
+                <div class='row'>
+                    <div class="col-12 col-md-3 info">
+                        <a id="resume" target="_blank" href="/assets/docs/courtney-ring-resume.pdf">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-download fa-stack-1x fa-inverse"></i>
+                            </span>
+                            <h5 class="label"><strong>Resume</strong></h5>
+                            <h5 class="link">Download [PDF,&nbsp;1MB]</h5>
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-3 info">
+                        <a id="email" href="mailto:hello@courtney-ring.com">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+                            </span>
+                            <h5 class="label"><strong>Email</strong></h5>
+                            <h5 class="link">hello@courtney-ring.com</h5>
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-3 info">
                     <a id="linkedin" href="http://www.linkedin.com/in/courtneyring710" target="_blank">
                         <span class="fa-stack fa-lg">
                             <i class="fa fa-circle fa-stack-2x"></i>
@@ -506,8 +507,9 @@
                         <h5 class="link">courtneyring710</h5>
                     </a>
                 </div>
-                <div class="col-12 form">
-                    <form role="form" method="post" action="mailer2.php">
+                </div>
+                <div class="row form">
+                    <form role="form" method="post" action="mailer2.php"j class='col-12'>
                         <div class="form-group">
                             <label for="name">Name:</label>
                             <input type="text" class="form-control" name="name" id="name">
