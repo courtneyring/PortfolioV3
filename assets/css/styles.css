@@ -289,10 +289,6 @@ ul{
 }
 
 @media(min-width: 768px){
-    .landing{
-        margin-top: -66px;
-    }
-    
     .landing .words{
         padding: 20px 70px;
         position: relative;
