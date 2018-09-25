@@ -136,6 +136,7 @@ ul{
     -moz-transition: all 0.6s ease-out;
     -o-transition: all 0.6s ease-out;
     -ms-transition: all 0.6s ease-out;
+    padding-right: 0px;
     transition: all 0.6s ease-out; 
 }
 
@@ -175,7 +176,7 @@ ul{
 
  .navbar-nav{
     background-color: rgba(52,52,52,0.6);
-    box-shadow: 0rem 0rem 2.5rem rgba(52, 52, 52, 1);
+    padding: 10px 20px;
 }
 
 .navbar.scrolled .navbar-nav{
@@ -286,6 +287,22 @@ ul{
 
 .landing .image, .landing .words{
     height: 100%;
+}
+
+.landing .arrow-icon{
+    bottom: 64px;
+    position: absolute;
+    z-index: 4;
+    font-size: 30px;
+}
+
+.landing .arrow-icon .fa-circle{
+    color: white;
+}
+
+.landing .arrow-icon .fa-angle-down{
+    color:  #2c2a71;
+    font-size: 35px;
 }
 
 @media(min-width: 768px){

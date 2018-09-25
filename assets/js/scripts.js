@@ -1,6 +1,6 @@
 //--------Smoothscroll Function---------//
 //$("nav ul li a[href^='#']").on('click', function(e) {
-$(".nav-item a, .arrow, .footer a, .navbar-brand").on('click', function(e) {
+$(".nav-item a, .arrow, .footer a, .navbar-brand, .landing a").on('click', function(e) {
 //    ga('send', 'event', 'navigation'); 
    e.preventDefault();
     e.stopPropagation();
