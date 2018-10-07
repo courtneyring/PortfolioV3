@@ -1,4 +1,8 @@
+
+
 //--------Smoothscroll Function---------//
+navbarHeight = $('nav').height()
+
 //$("nav ul li a[href^='#']").on('click', function(e) {
 $(".nav-item a, .arrow, .footer a, .navbar-brand, .landing a").on('click', function(e) {
 //    ga('send', 'event', 'navigation'); 
@@ -7,11 +11,11 @@ $(".nav-item a, .arrow, .footer a, .navbar-brand, .landing a").on('click', funct
 
    var hash = this.hash;
     $hash = $(hash);
-    
+
+
     
    if(hash.length){
-       var scrollLocation = $hash.offset().top - $("nav").outerHeight();
-       console.log(scrollLocation)
+        var scrollLocation = $hash.offset().top - navbarHeight;
    }
    else{
        var scrollLocation = 0;
@@ -30,7 +34,7 @@ $(".nav-item a, .arrow, .footer a, .navbar-brand, .landing a").on('click', funct
 
 
 $('body').scrollspy({
-   offset: $("nav").outerHeight()+1
+   offset: $("nav").outerHeight()
 });
 
 

@@ -6,6 +6,10 @@ lg 992-1199px
 xl 1200+
 */
 
+/*
+Light Grey - #cacaca
+*/
+
 
 /*Body */
 html{
@@ -136,6 +140,7 @@ ul{
     -moz-transition: all 0.6s ease-out;
     -o-transition: all 0.6s ease-out;
     -ms-transition: all 0.6s ease-out;
+    padding-left: 0px;
     padding-right: 0px;
     transition: all 0.6s ease-out; 
 }
@@ -156,7 +161,7 @@ ul{
 }
 
 .navbar .navbar-collapse ul li .nav-link.active{
-    color:#f7f5f4;
+    color:#979797;
 }
 
 .navbar-toggler span{
@@ -175,7 +180,7 @@ ul{
 }
 
  .navbar-nav{
-    background-color: rgba(52,52,52,0.6);
+    background-color: rgba(52,52,52);
     padding: 10px 20px;
 }
 
@@ -185,6 +190,11 @@ ul{
 }
 
 
+@media(min-width: 768px){
+     .navbar-nav {
+        background-color: rgba(52,52,52, 0.8);
+    }
+}
 
 
 @media(min-width:992px){
@@ -290,7 +300,7 @@ ul{
 }
 
 .landing .arrow-icon{
-    bottom: 64px;
+    bottom: 35px;
     position: absolute;
     z-index: 4;
     font-size: 30px;
@@ -311,6 +321,10 @@ ul{
         position: relative;
         opacity: 1;
     }   
+    
+    .landing .arrow-icon{
+        bottom: 64px;
+    }
 }
 
 @media(min-width:1200px){
@@ -365,6 +379,18 @@ ul{
 
 .skills .subcategory h4{
     margin-bottom: 10px;
+}
+
+.skills .subcategory ul{
+    align-self: flex-start;
+    margin-left: 20px;
+}
+
+@media(min-width: 768px){
+    .skills .subcategory ul{
+        align-self: center;
+        margin-left: 0px;
+    }
 }
 
 
@@ -450,6 +476,36 @@ ul{
     padding: 40px;
     position: relative;
 }
+
+/*For Arrow*/
+
+/*
+
+.portfolio .portfolio-expand:after, .portfolio .portfolio-expand:before {
+	bottom: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.portfolio .portfolio-expand:after {
+	border-color: rgba(136, 183, 213, 0);
+	border-bottom-color: #88b7d5;
+	border-width: 30px;
+	margin-left: -30px;
+}
+
+.portfolio .portfolio-expand:before {
+	border-color: rgba(194, 225, 245, 0);
+	border-bottom-color: #c2e1f5;
+	border-width: 36px;
+	margin-left: -36px;
+}
+*/
 
 /*
 .portfolio .portfolio-expand::after {
@@ -737,7 +793,7 @@ ul{
 }
 
 .contact .form .submit{
-    background-color: #44839A;
+    background-color: #2c2a71;
     color:white;
     border: .1rem solid transparent;
     border-radius: 0.5rem;
@@ -758,7 +814,7 @@ ul{
 
 .footer p{
     width:100%;
-    padding:2rem 0.7rem;
+    padding: 10px;
 }
 
 .footer span:first-child{
@@ -778,12 +834,9 @@ ul{
 
 
 @media(min-width:767px){
-    .footer{
-        height:10rem;
-    }
 
     .footer p{
         width:100%;
-        margin:3rem;
+        margin: 20px;
     }
 }
